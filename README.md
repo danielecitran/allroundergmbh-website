@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Umbau-Allrounder GmbH Website
 
-## Getting Started
+Eine moderne und responsive Website für die Umbau-Allrounder GmbH, ein Bau- und Umbauunternehmen aus der Schweiz.
 
-First, run the development server:
+## Features
 
+- Moderne und responsive Design
+- Animierte UI-Elemente mit Framer Motion
+- Optimiert für Desktop und Mobile
+- Klare Darstellung der Dienstleistungen
+- Kontaktinformationen und Standort
+- SEO-optimiert
+
+## Technologien
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Heroicons
+
+## Installation
+
+1. Klonen Sie das Repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Installieren Sie die Abhängigkeiten:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Starten Sie den Entwicklungsserver:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Die Website ist dann unter `http://localhost:3000` erreichbar.
 
-## Learn More
+## Anpassungen
 
-To learn more about Next.js, take a look at the following resources:
+### Bilder
+Ersetzen Sie die Platzhalter-Bilder in den folgenden Verzeichnissen:
+- `/public/placeholder-construction.jpg`
+- `/public/placeholder-team.jpg`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Kontaktinformationen
+Aktualisieren Sie die Kontaktinformationen in:
+- `app/page.tsx` (Kontakt-Sektion)
+- `app/layout.tsx` (Footer)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Firmeninformationen
+Passen Sie die Firmenbeschreibung und Dienstleistungen in `app/page.tsx` an.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Die Website kann auf verschiedenen Plattformen deployed werden:
+- Vercel (empfohlen)
+- Netlify
+- Eigenes Hosting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lizenz
+
+Alle Rechte vorbehalten © Umbau-Allrounder GmbH
