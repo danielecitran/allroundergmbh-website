@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { BuildingOfficeIcon, WrenchScrewdriverIcon, PaintBrushIcon, ClipboardDocumentCheckIcon, ChatBubbleLeftRightIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
+<<<<<<< HEAD
   const services = [
     {
       title: 'Bauleitung',
@@ -148,6 +149,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+=======
+  return (
+    <main className="min-h-screen p-8">
+      <h1>Willkommen bei Allrounder GmbH</h1>
+>>>>>>> 42bf86f70deeabb1794c0a877cca0b89aba4f10b
     </main>
   );
 }

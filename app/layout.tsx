@@ -1,12 +1,25 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
+<<<<<<< HEAD
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Umbau-Allrounder GmbH - Ihr Bau- und Umbaupartner in der Schweiz",
   description: "Professionelle Bau- und Umbauleistungen in der Schweiz. Bauleitung, Beratung, Maurerarbeiten, Gipserarbeiten, Renovationen und Bodenverlegung.",
+=======
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+export const metadata: Metadata = {
+  title: "Allrounder GmbH",
+  description: "Ihr Partner für alle Aufgaben",
+>>>>>>> 42bf86f70deeabb1794c0a877cca0b89aba4f10b
 };
 
 export default function RootLayout({
@@ -16,6 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+<<<<<<< HEAD
       <body className={inter.className}>
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
           <div className="container mx-auto px-4">
@@ -68,6 +82,14 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+=======
+      <body className={`${inter.variable} antialiased flex flex-col min-h-screen`}>
+        <Header />
+        <div className="flex-grow">
+          {children}
+        </div>
+        <Footer />
+>>>>>>> 42bf86f70deeabb1794c0a877cca0b89aba4f10b
       </body>
     </html>
   );
